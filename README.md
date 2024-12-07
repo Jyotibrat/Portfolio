@@ -1,1 +1,0 @@
-# ethan-portfolio-starter
