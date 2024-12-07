@@ -30,7 +30,7 @@ const Achievements = () => {
               animate='show'
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Every milestone I’ve achieved reflects my passion for pushing boundaries and exploring the unknown. From contributing to impactful open-source projects to excelling in hackathons and earning certifications, each accomplishment marks a step forward in my journey of learning, growth, and innovation. These achievements aren't just trophies—they’re the stories of challenges faced and goals conquered.
+              Every milestone I&apos;ve achieved reflects my passion for pushing boundaries and exploring the unknown. From contributing to impactful open-source projects to excelling in hackathons and earning certifications, each accomplishment marks a step forward in my journey of learning, growth, and innovation. These achievements aren't just trophies—they’re the stories of challenges faced and goals conquered.
             </motion.p>
           </div>
           {/* Slider */}

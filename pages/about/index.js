@@ -132,7 +132,7 @@ const About = () => {
             animate='show'
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            I’m not just a B.Tech (AI & ML) student at VIT Bhopal—I’m a coder with a flair for creating magic at the crossroads of AI, web development, and design. Whether it’s building Gen AI models, crafting intuitive web experiences, or contributing to open-source platforms like Hacktoberfest and GSSOC, I’m always pushing boundaries. When I’m not solving real-world problems through code, you’ll catch me sketching my ideas, or scoring goals on the football field—because creativity fuels innovation.
+            I&apos;m not just a B.Tech (AI & ML) student at VIT Bhopal—I&apos;m a coder with a flair for creating magic at the crossroads of AI, web development, and design. Whether it&apos;s building Gen AI models, crafting intuitive web experiences, or contributing to open-source platforms like Hacktoberfest and GSSOC, I&apos;m always pushing boundaries. When I&apos;m not solving real-world problems through code, you&apos;ll catch me sketching my ideas, or scoring goals on the football field—because creativity fuels innovation.
           </motion.p>
           {/* counters */}
           <motion.div
