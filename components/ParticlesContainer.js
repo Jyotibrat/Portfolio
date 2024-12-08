@@ -1,12 +1,12 @@
-import Particles, { } from 'react-tsparticles'
-import { loadFull } from 'tsparticles'
-import React, {useCallback} from 'react';
+import { Particles } from '@tsparticles/react';
+import { Engine, loadFull } from '@tsparticles/engine';
+import {React, useCallback} from 'react';
 import { color, distance } from 'framer-motion';
 
 const ParticlesContainer = () => {
   // init
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
+    await loadFull(engine, true);
   }, []);
 
   const particlesLoaded = useCallback(async () => {}, [])
