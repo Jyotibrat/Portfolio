@@ -1,5 +1,5 @@
 import { Particles } from '@tsparticles/react';
-import { Engine, loadFull } from '@tsparticles/engine';
+import { Engine, loadFull } from 'tsparticles-engine';
 import { React, useCallback } from 'react';
 import { color, distance } from 'framer-motion';
 

@@ -14,13 +14,14 @@ import {
   SiCplusplus,
   SiJupyter,
   SiGooglecolab,
-  SiVisualstudiocode,
   SiGit,
   SiGithub,
   SiDocker,
   SiPandas,
   SiMysql,
 } from "react-icons/si";
+
+import { VscVscode } from "react-icons/vsc";
 
 // about data
 export const aboutData = [
@@ -59,7 +60,7 @@ export const aboutData = [
       {
         title: "Tools",
         icons: [
-          <SiVisualstudiocode key="vscode" />,
+          <VscVscode key="vscode" />,
           <SiGithub key="github" />,
           <SiGit key="git" />,
           <SiGooglecolab key="googlecolab" />,
