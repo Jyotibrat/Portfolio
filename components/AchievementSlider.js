@@ -21,31 +21,31 @@ const AchievementsData = [
     icon: <GrCertificate />,
     title: 'Certifications',
     description: 'Recognized achievements in technical fields.',
-    Link: '/Certifications'
+    link: '/Certifications'
   },
   {
     icon: <RiOpenSourceLine />,
     title: 'Open-Source',
     description: 'Contributions to open-source projects globally.',
-    Link: '/OpenSource'
+    link: '/OpenSource'
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
     description: 'Building diverse projects across technologies.',
-    Link: '/projects'
+    link: '/projects'
   },
   {
     icon: <FaTools />,
     title: 'Technical-Roles',
     description: 'Experience in various technical leadership roles.',
-    Link: '/TechnicalRoles'
+    link: '/TechnicalRoles'
   },
   {
     icon: <TbTargetArrow />,
     title: 'Milestones',
     description: 'Key moments of success and growth.',
-    Link: '/Milestones'
+    link: '/Milestones'
   },
 ];
 
@@ -100,8 +100,8 @@ const AchievementsSlider = () => {
 
         return (
           <SwiperSlide key={index}>
-            {item.Link ? (
-              <Link href={item.Link}>{SlideContent}</Link>
+            {item.link ? (
+              <Link href={item.link}>{SlideContent}</Link>
             ) : (
               SlideContent
             )}
