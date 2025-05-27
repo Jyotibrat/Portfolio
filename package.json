@@ -27,6 +27,7 @@
     "styled-components": "^6.1.13",
     "swiper": "^11.1.15",
     "tailwind-scrollbar": "^3.1.0",
+    "tar-fs": "^2.1.1",
     "three-mesh-bvh": "^0.8.0",
     "tunnel-agent": "^0.6.0"
   },
