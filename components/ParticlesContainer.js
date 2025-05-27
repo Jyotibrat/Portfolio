@@ -16,14 +16,14 @@ const ParticlesContainer = () => {
         fullScreen: { enable: false },
         background: {
           color: {
-            value: '',
+            value: 'transparent',
           },
         },
         fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
-              enable: false,
+              enable: true,
               mode: 'push',
             },
             onHover: {
@@ -34,7 +34,7 @@ const ParticlesContainer = () => {
           },
           modes: {
             push: {
-              quantity: 90,
+              quantity: 4,
             },
             repulse: {
               distance: 200,
@@ -44,10 +44,10 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: '#e68e2e',
+            value: '#f13024',
           },
           links: {
-            color: '#f5d393',
+            color: '#f13024',
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -60,7 +60,7 @@ const ParticlesContainer = () => {
               default: 'bounce',
             },
             random: false,
-            speed: 1,
+            speed: 2,
             straight: false,
           },
           number: {
