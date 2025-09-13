@@ -13,48 +13,86 @@ const ProjectSlides = {
     {
       images: [
         {
-          title: 'Simulation of OS algorithms',
-          path: '/SimuOSProject.png',
-          link: '',
+          title: 'AI Flow',
+          path: '/ai flow.png',
+          link: 'https://ai-flow-gssoc.vercel.app/',
         },
         {
-          title: 'School App using Java',
-          path: '/Simple_School_App.png',
-          link: 'https://github.com/Jyotibrat/Simple-School-App',
+          title: 'BotMed',
+          path: '/BotMed.png',
+          link: 'https://botmed.netlify.app/',
         },
         {
-          title: 'Simple Bank System GUI using Python Tkinter',
-          path: '/Bank_Project.png',
-          link: 'https://github.com/Adityesh1962/Bank_gui',
+          title: 'Token Trove',
+          path: '/Token Trove.png',
+          link: 'https://token-trove-blockchain-nft.vercel.app/',
         },
         {
-          title: 'Birthday Invitation Website',
-          path: '/Bday_Project.png',
-          link: 'https://github.com/Jyotibrat/Birthday-Invite-Website-Project',
+          title: 'Git Pulse',
+          path: '/Git Pulse.png',
+          link: 'https://github.com/Jyotibrat/Git-Pulse',
         },
       ],
     },
     {
       images: [
         {
-          title: 'Hand Cricket Game using Java',
-          path: '/Hand_Cricket_Game.png',
+          title: 'Docx Sum',
+          path: '/Docx.png',
+          link: 'https://docxsum.netlify.app/',
+        },
+        {
+          title: 'EzView',
+          path: '/EzView.png',
+          link: 'https://jyotibrat.github.io/EzView/',
+        },
+        {
+          title: 'TrmSCII',
+          path: '/TrmSCII.jpg',
+          link: 'https://github.com/Jyotibrat/TrmSCII',
+        },
+        {
+          title: 'Simple Banking Desktop App',
+          path: '/Bank_Project.png',
+          link: 'https://github.com/Adityesh1962/Bank_gui',
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: 'Floor Planning Generative AI',
+          path: '/Floor Planning Gen AI.png',
+          link: 'https://github.com/Jyotibrat/A-State-of-Art-Survey-on-Generative-AI-Techniques-for-Floor-Planning',
+        },
+        {
+          title: 'Hand Cricket Simulator',
+          path: '/Hand_Cricket_Simulator.png',
           link: 'https://github.com/Jyotibrat/Hand-Cricket-Simulator',
         },
         {
-          title: 'Urban Planning Generative AI',
-          path: '/Urban_Planning_GenAI.png',
-          link: 'https://github.com/Jyotibrat/Urban-Planning-Gen-AI',
+          title: "Neurathon '25 Project",
+          path: '/Neurathon.png',
+          link: 'https://github.com/Auth0r-C0dez/Neurathon-25',
         },
         {
-          title: 'Image Generation Website Front',
-          path: '/Gen_AI_Front_end.png',
-          link: '',
+          title: 'HackByte 3.0 Project',
+          path: '/HackByte.png',
+          link: 'https://github.com/Jyotibrat/HackByte-3.0',
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: 'GSOC Innovators Club Official Website',
+          path: '/GSOC.png',
+          link: 'https://gsoc-innovators.netlify.app/',
         },
         {
-          title: 'Calculator using Python',
-          path: '/Calculator_Project.png',
-          link: 'https://github.com/Jyotibrat/Calculator',
+          title: 'Threads of Heritage Event Website',
+          path: '/TOH.png',
+          link: 'https://threadsofheritage.netlify.app/',
         },
       ],
     },

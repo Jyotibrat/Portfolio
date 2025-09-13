@@ -19,6 +19,8 @@ import {
   SiDocker,
   SiPandas,
   SiMysql,
+  SiRemix,        // Added for Remix IDE
+  SiSolidity,     // Added for Solidity
 } from "react-icons/si";
 
 import { VscVscode } from "react-icons/vsc";
@@ -55,6 +57,7 @@ export const aboutData = [
           <FaHtml5 key="html5" />,
           <FaCss3 key="css3" />,
           <SiRuby key="ruby" />,
+          <SiSolidity key="solidity" />,  // Added Solidity
         ],
       },
       {
@@ -68,11 +71,12 @@ export const aboutData = [
           <SiPandas key="pandas" />,
           <SiMysql key="mysql" />,
           <SiDocker key="docker" />,
+          <SiRemix key="remix" />,        // Added Remix IDE
         ],
       },
       {
         title: "Technologies",
-        stage: "AI/ML, Web Development, Gen AI",
+        stage: "AI/ML, Web Development, Gen AI, Blockchain",
       },
       {
         title: "Soft Skills",
@@ -84,21 +88,34 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Technical Team Member at North East Club",
-        stage: "Oct &apos;24 (currently working)",
+        title: "Project Admin at GSSOC '25",
+        stage: "Jul '25 (currently working)",
       },
       {
-        title: "Contributor at Hacktoberfest &apos;24",
-        stage: "Oct &apos;24 - Nov &apos;24",
+        title: "Technical Team Lead at North East Club",
+        stage: "Jan '25 (currently working)",
       },
       {
-        title: "Contributor at GSSOC Ext &apos;24",
-        stage: "Sep &apos;24 - Nov &apos;24",
+        title: "Technical Team Co-Lead at GSoC Innovators Club",
+        stage: "Apr '25 (currently working)",
+      },
+      {
+        title: "Contributor at VIT Bhopal AI Innovators Hub",
+        stage: "Jul '25 (currently working)",
+      },
+      {
+        title: "Virtual Intern at Deloitte",
+        stage: "Jul '25 - Aug '25",
+      },
+      {
+        title: "Intern at The Red Users",
+        stage: "Apr '25 - May '25",
       },
     ],
   },
 ];
 
+// Rest of your component code remains the same...
 import Circles from "../../components/Circles";
 
 // framer motion
@@ -147,34 +164,34 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={2} duration={5} /> +
+                  <Countup start={0} end={3} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   years of experience
                 </div>
               </div>
-              {/* Finished Projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={4} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished Projects
-                </div>
-              </div>
               {/* Ongoing Projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={4} duration={6} /> +
+                  <Countup start={0} end={7} duration={6} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Ongoing Projects
                 </div>
               </div>
+              {/* Finished Projects */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <Countup start={0} end={14} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Finished Projects
+                </div>
+              </div>
               {/* Code commits */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 flex items-center">
-                  <Countup start={0} end={1000} duration={6} />
+                  <Countup start={0} end={1000} duration={5} />
                   <span className="ml-1">+</span>
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">

@@ -1,3 +1,4 @@
+import { image, link } from "framer-motion/client";
 import React from "react";
 import styled from "styled-components";
 
@@ -13,7 +14,7 @@ const timelineData = [
         year: "Oct 06, 2024",
         title: "First Hacktoberfest",
         description: "Registered for Hacktoberfest '24",
-        image: "/Hacktoberfest24_Register_Badge.png", // Example image
+        image: "/Hacktoberfest24_Register_Badge.png",
         link: "https://www.linkedin.com/posts/bindupautra-jyotibrat-a65693289_i-got-the-hacktoberfest-2024-level-4-badge-activity-7259931815254130688-wr4p?utm_source=share&utm_medium=member_desktop",
     },
     {
@@ -60,6 +61,45 @@ const timelineData = [
         year: "Nov 10, 2024",
         title: "GSSOC '24 Extd Finished",
         description: "Completed GSSOC '24 Extd. Made multiple Open Source Contributions.",
+    },
+    {
+        year: "Jan 01, 2025",
+        title: "Contributor at ACWOC '25",
+        description: "Contributed in the ACWOC '25 Open Source Event conducted by the Android Club VITB.",
+        image: "/COP ACWOC.png",
+        link: "https://github.com/Auth0r-C0dez/Caption_generator/pull/3",
+    },
+    {
+        year: "Jan 01, 2025",
+        title: "Project Admin at ACWOC '25",
+        description: "Participated in the ACWOC '25 Open Source Event as a Project Admin conducted by the Android Club VITB.",
+        image: "/AcWoC Badge.png",
+        link: "https://github.com/Jyotibrat/EzView",
+    },
+    {
+        year: "Jan 01, 2025",
+        title: "Contributor at SWOC '25",
+        description: "Contributed in the Social Winter of Code 2025",
+        image: "/SWOC Certification.jpg",
+    },
+    {
+        year: "Feb 01, 2025",
+        title: "Bitcoin Development Trainee at Summer of Bitcoin '25",
+        description: "Contributed in the Summer of Bitcoin 2025 as a Bitcoin Development Trainee",
+        image: "/SOB.jpg",
+    },
+    {
+        year: "Jun 01, 2025",
+        title: "Contributor at SSOC '25",
+        description: "Contributed in the Social Summer of Code 2025",
+        image: "/Contributor SSOC Badge.png",
+    },
+    {
+        year: "Jul 01, 2025",
+        title: "Project Admin at GSSOC '25",
+        description: "Project Admin at GirlScript Summer of Code 2025",
+        image: "/GSSOC 2025 PA BADGE.jpeg",
+        link: "https://github.com/Jyotibrat/AI-Flow",
     },
 ];
 

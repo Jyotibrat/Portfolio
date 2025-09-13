@@ -1,109 +1,110 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaTrophy, FaCode, FaStar, FaGithub, FaFileAlt } from 'react-icons/fa';
-import { SiCodechef, SiLeetcode, SiHackerrank } from 'react-icons/si';
-
-const milestoneData = [
-  {
-    id: 1,
-    title: 'CodeChef Achievement',
-    description: 'Solved 1000+ Problems on CodeChef',
-    icon: <SiCodechef className="text-5xl text-accent" />,
-    date: 'March 2024',
-    color: 'from-orange-600 to-red-600'
-  },
-  {
-    id: 2,
-    title: 'CodeChef Streak',
-    description: 'Maintained 25 days streak on CodeChef',
-    icon: <FaTrophy className="text-5xl text-accent" />,
-    date: 'February 2024',
-    color: 'from-yellow-600 to-amber-600'
-  },
-  {
-    id: 3,
-    title: 'HackerRank Stars',
-    description: 'Earned 5 star for Python and C++ on HackerRank',
-    icon: <SiHackerrank className="text-5xl text-accent" />,
-    date: 'January 2024',
-    color: 'from-green-600 to-emerald-600'
-  },
-  {
-    id: 4,
-    title: 'LeetCode Achievement',
-    description: 'Solved 100+ Problems on LeetCode',
-    icon: <SiLeetcode className="text-5xl text-accent" />,
-    date: 'December 2023',
-    color: 'from-blue-600 to-indigo-600'
-  },
-  {
-    id: 5,
-    title: 'GitHub Streak',
-    description: 'Maintained 41 days streak on GitHub',
-    icon: <FaGithub className="text-5xl text-accent" />,
-    date: 'November 2023',
-    color: 'from-purple-600 to-violet-600'
-  },
-  {
-    id: 6,
-    title: 'Research Paper',
-    description: 'Experience writing a Research Paper with industry experts',
-    icon: <FaFileAlt className="text-5xl text-accent" />,
-    date: 'October 2023',
-    color: 'from-pink-600 to-rose-600'
-  }
-];
 
 const Milestones = () => {
+  const [selectedMilestone, setSelectedMilestone] = useState(null);
+  const milestoneData = [
+    {
+      id: 1,
+      title: 'CodeChef Achievement',
+      description: 'Solved 1000+ Problems on CodeChef.',
+      image: '/Bullseye_Arrow_Business_Goals_Sign_Symbol.png',
+    },
+    {
+      id: 2,
+      title: 'LeetCode Streak',
+      description: 'Maintained 53 days streak on LeetCode.',
+      image: '/Bullseye_Arrow_Business_Goals_Sign_Symbol.png',
+    },
+    {
+      id: 3,
+      title: 'HackerRank Stars',
+      description: 'Earned 5 star for Python and C++ on HackerRank.',
+      image: '/Bullseye_Arrow_Business_Goals_Sign_Symbol.png',
+    },
+    {
+      id: 4,
+      title: 'Kaggle Achievement',
+      description: 'Earned 15 Badges on Kaggle.',
+      image: '/Bullseye_Arrow_Business_Goals_Sign_Symbol.png',
+    },
+    {
+      id: 5,
+      title: 'GitHub Streak',
+      description: 'Maintained 41 days streak on GitHub.',
+      image: '/Bullseye_Arrow_Business_Goals_Sign_Symbol.png',
+    },
+    {
+      id: 6,
+      title: 'Research Paper Experience',
+      description: 'Had the Experience to write a Research Paper along with Great Minds.',
+      image: '/Bullseye_Arrow_Business_Goals_Sign_Symbol.png',
+    },
+  ];
+
   return (
-    <div className="container mx-auto px-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="py-10 flex flex-col items-center relative">
+      
+      {/* Milestone Grid */}
+      <div className="grid grid-cols-2 gap-8 md:gap-16 lg:grid-cols-3 lg:gap-12">
         {milestoneData.map((milestone) => (
           <motion.div
             key={milestone.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: milestone.id * 0.1 }}
-            className="group relative overflow-hidden rounded-xl bg-[rgba(65,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300"
+            className="relative flex items-center justify-center w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 cursor-pointer"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{
+              scale: 1.5,
+              rotate: 360,
+              transition: { duration: 0.6 },
+            }}
+            onClick={() => setSelectedMilestone(milestone)}
           >
-            <div className={`absolute inset-0 bg-gradient-to-br ${milestone.color} opacity-0 group-hover:opacity-20 transition-all duration-300`}></div>
-            <div className="p-8 relative z-10">
-              <motion.div 
-                className="flex justify-center mb-6"
-                animate={{ 
-                  scale: [1, 1.2, 1],
-                  rotate: [0, 10, -10, 0]
-                }}
-                transition={{ 
-                  duration: 3,
+            <div
+              className="relative w-full h-full mix-blend-color-dodge"
+              style={{ backgroundBlendMode: 'color-dodge' }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-purple-600 rounded-full border-4 border-white"></div>
+              <div className="absolute inset-4 bg-white rounded-full border-4 border-gray-300"></div>
+              <div className="absolute inset-8 bg-gradient-to-b from-gray-200 to-white rounded-full"></div>
+
+              {/* Image */}
+              <motion.img
+                src={milestone.image}
+                alt={milestone.title}
+                className="absolute inset-0 w-full h-full object-cover rounded-full"
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{
                   repeat: Infinity,
-                  repeatType: "reverse"
+                  repeatType: 'reverse',
+                  duration: 1.5,
                 }}
-              >
-                {milestone.icon}
-              </motion.div>
-              <h3 className="text-2xl font-bold mb-2 text-white text-center group-hover:text-accent transition-colors duration-300">
-                {milestone.title}
-              </h3>
-              <p className="text-gray-400 mb-4 text-center font-medium">{milestone.date}</p>
-              <p className="text-gray-300 text-center text-lg">{milestone.description}</p>
-              <motion.div
-                className="w-full h-1 bg-accent/20 mt-6 rounded-full overflow-hidden"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 1, delay: milestone.id * 0.2 }}
-              >
-                <motion.div
-                  className="h-full bg-accent"
-                  initial={{ width: "0%" }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 1.5, delay: milestone.id * 0.2 }}
-                />
-              </motion.div>
+              />
             </div>
           </motion.div>
         ))}
       </div>
+
+      {/* Milestone Details Card */}
+      {selectedMilestone && (
+        <motion.div
+          className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setSelectedMilestone(null)}
+        >
+          <motion.div
+            className="bg-[rgba(65,47,123,0.9)] p-8 rounded-lg shadow-lg text-center"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0 }}
+            transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          >
+            <h3 className="text-2xl text-accent font-bold mb-4">{selectedMilestone.title}</h3>
+            <p className="text-gray-100">{selectedMilestone.description}</p>
+          </motion.div>
+        </motion.div>
+      )}
     </div>
   );
 };

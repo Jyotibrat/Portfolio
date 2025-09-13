@@ -23,17 +23,19 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-slick": "^0.30.2",
+    "react-tsparticles": "^2.12.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.13",
     "swiper": "^11.1.15",
     "tailwind-scrollbar": "^3.1.0",
     "tar-fs": "^2.1.1",
     "three-mesh-bvh": "^0.8.0",
+    "tsparticles-slim": "^2.12.0",
     "tunnel-agent": "^0.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "eslint": "9.16.0",
+    "eslint": "^9.35.0",
     "eslint-config-next": "15.0.4",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16"
